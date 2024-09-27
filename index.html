@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>MyCurrencyConverter - Convert Your currency</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>MyCurrencyConverter</span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contener">
+            <h1>Choose a currency to convert</h1>
+            <form action="/action.php" method="get">
+                <label for="quantity">Choose a quantity: </label>
+                <input type="number" name="quantity" min="1" max="10">
+                <label for="currency">Choose a currency: </label>
+                <select name="currency">
+                    <option value="INR">Indian Rupee</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                </select>
+                <button class="btn" type="submit" id="btn">Submit</button>
+            </form>
+            <div class="output">
+                <h2>Here is your converted values in different currencies</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Code</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        All Wrights reserved.
+    </footer>
+    <script src="../logic/index.js"></script>
+</body>
+</html>
